@@ -1,4 +1,4 @@
-package io.kuenzler.whatsappwebtogo;
+package io.koledujio.whatsappwebmobile;
 
 import android.annotation.SuppressLint;
 import android.app.Notification;
@@ -103,7 +103,7 @@ public class BlobDownloader {
             intent.setDataAndType(apkURI, MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension));
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
 
-            final PendingIntent pendingIntent = PendingIntent.getActivity(context, notificationId, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+            final PendingIntent pendingIntent = PendingIntent.getActivity(context, notificationId, intent, PendingIntent.FLAG_CANCEL_CURRENT | PendingIntent.FLAG_IMMUTABLE);
             final String notificationChannelId = "Downloads";
 
             final NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);

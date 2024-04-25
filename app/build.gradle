@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 34
     defaultConfig {
-        applicationId "io.kuenzler.whatsappwebtogo"
+        applicationId "io.koledujio.whatsappwebtogo"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 33
         versionCode 37
         versionName "1.7.3"
     }
@@ -23,6 +23,7 @@ android {
         targetCompatibility 1.8
         sourceCompatibility 1.8
     }
+    namespace 'io.koledujio.whatsappwebmobile'
 }
 
 dependencies {

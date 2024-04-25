@@ -1,4 +1,4 @@
-package io.kuenzler.whatsappwebtogo;
+package io.koledujio.whatsappwebmobile;
 
 import java.util.HashMap;
 

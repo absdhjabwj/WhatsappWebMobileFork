@@ -1,6 +1,7 @@
-package io.kuenzler.whatsappwebtogo;
+package io.koledujio.whatsappwebmobile;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -103,6 +104,7 @@ public class WebviewActivity extends AppCompatActivity implements NavigationView
     private String mCurrentDownloadRequest = null;
 
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -153,8 +155,7 @@ public class WebviewActivity extends AppCompatActivity implements NavigationView
 
         mWebView.getSettings().setDomStorageEnabled(true); //for html5 app
         mWebView.getSettings().setDatabaseEnabled(true);
-        mWebView.getSettings().setAppCacheEnabled(false); // deprecated
-        mWebView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
+        mWebView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
 
         mWebView.getSettings().setLoadWithOverviewMode(true);
         mWebView.getSettings().setUseWideViewPort(true);
@@ -634,7 +635,7 @@ public class WebviewActivity extends AppCompatActivity implements NavigationView
         int id = item.getItemId();
 
         if (id == R.id.appbar_hide) {
-            if (getSupportActionBar().isShowing()) {
+            if (Objects.requireNonNull(getSupportActionBar()).isShowing()) {
                 showSnackbar("hiding... swipe right to show navigation bar");
                 setAppbarEnabled(false);
             } else {

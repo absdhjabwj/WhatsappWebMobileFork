@@ -1,5 +1,7 @@
 # WhatsApp Web To Go
 
+_This is a fork of WhatsappWebToGo_
+
 Mobile Client for WhatsApp Web.
 
 This app lets you access WhatsApp Web on your mobile phone or tablet.
