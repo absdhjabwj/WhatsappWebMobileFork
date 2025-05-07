@@ -18,4 +18,5 @@
     <string name="toast_saved_to_downloads_folder">Salvo na pasta de downloads</string>
     <string name="notification_title_tap_to_open">Toque para abrir</string>
     <string name="notification_text_saved_as">Salvo como %s</string>
+    <string name="listener">Ouvinte</string>
 </resources>
