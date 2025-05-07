@@ -19,4 +19,5 @@
     <string name="toast_saved_to_downloads_folder">Im Downloadordner gespeichert</string>
     <string name="notification_title_tap_to_open">Klicken um zu Öffnen</string>
     <string name="notification_text_saved_as">Gespeichert als %s</string>
+    <string name="listener">Zuhörer</string>
 </resources>
