@@ -18,4 +18,5 @@
     <string name="toast_saved_to_downloads_folder">Disimpan ke folder unduhan</string>
     <string name="notification_title_tap_to_open">Tekan untuk membuka</string>
     <string name="notification_text_saved_as">Disimpan sebagai %s</string>
+    <string name="listener">Pendengar</string>
 </resources>
